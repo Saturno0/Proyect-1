@@ -23,14 +23,14 @@
             </div>
     
             <div class="loggin-register">
-                <form action="" class="loggin_form">
+                <form action="php/loggin_user_be.php" class="loggin_form">
                     <h2>Inicia sesión</h2>
                     <input type="text" name="Nombre-U_Mail" placeholder="Nombre de usuario o gmail">
                     <input type="password" name="Contraseña" placeholder="Contraseña">
-                    <button id="conf_in-sesion">Inicia sesión</button>
+                    <button type="submit" id="conf_in-sesion" name="Loggin_user">Inicia sesión</button>
                 </form>
     
-                <form action="php/registro_usuario_be.php" method="post" class="register_form">
+                <form action="php/create_user_be.php" method="post" class="register_form">
                     <h2>Crear cuenta</h2>
                     <input type="text" name="Nombre_completo" placeholder="Nombre y apellido" required>
                     <input type="text" name="Mail" placeholder="Gmail" required>

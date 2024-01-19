@@ -18,6 +18,8 @@
             $contrasena = $_POST['Password'];
     
             $query = "INSERT INTO User (nombre_y_apellido, mail, nombre_cuenta, contraseña) VALUES ('$nombre_completo', '$mail', '$nombre_usuario', '$contrasena')";
+            $query2 = "INSERT INTO Logg_in_user (nombre_cuenta, mail, contraseña) VALUES ('$nombre_usuario', '$mail', '$contrasena')";
+
     
             $ask_querry_mail = "SELECT mail FROM User WHERE mail = '$mail'";
             $ask_querry_name = "SELECT nombre_cuenta FROM User WHERE nombre_cuenta = '$nombre_usuario'";
